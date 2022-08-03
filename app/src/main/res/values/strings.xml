@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Password Generator</string>
+    <string name="strCbAZ">accept A-Z</string>
+    <string name="strCbaz">accept a-z</string>
+    <string name="strEtSS">* # @</string>
+    <string name="strEtSSHint">your symbols</string>
+    <string name="strCbDigits">accept 0-9</string>
+    <string name="strTvAboutSb">Password Length</string>
+    <string name="strBtnGenPass">Get Password</string>
+    <string name="strMiResetFile">Reset passwords</string>
+</resources>

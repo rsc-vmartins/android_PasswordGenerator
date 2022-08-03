@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/idLlLetters"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/idCbAZ"
+            android:checked="true"
+            android:text="@string/strCbAZ"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/idCbaz"
+            android:checked="true"
+            android:text="@string/strCbaz"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></CheckBox>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/idLlLetters"
+        android:id="@+id/idLlDigitsAndSymbols"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/idCbDigits"
+            android:text="@string/strCbDigits"
+            android:checked="true"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></CheckBox>
+        <EditText
+            android:id="@+id/idEtSS"
+            android:text="@string/strEtSS"
+            android:hint="@string/strEtSSHint"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></EditText>
+    </LinearLayout>
+    <TextView
+        android:gravity="center"
+        android:layout_below="@id/idLlDigitsAndSymbols"
+        android:id="@+id/idTvAboutSb"
+        android:text="@string/strTvAboutSb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+    <SeekBar
+        android:layout_below="@id/idTvAboutSb"
+        android:id="@+id/idSbLength"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="32"
+        android:max="64"></SeekBar>
+
+    <Button
+        android:layout_below="@id/idSbLength"
+        android:id="@+id/idBtnGenPass"
+        android:text="@string/strBtnGenPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Button>
+
+    <ListView
+        android:layout_below="@id/idBtnGenPass"
+        android:id="@+id/idLvPasswords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+</RelativeLayout>
